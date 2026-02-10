@@ -1,41 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<title>あなたのＨＰタイトル</title>
-<meta name="keywords" content="ページのキーワードA,B,C">
-<meta name="description" content="ページの説明">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="index.css">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Your Name | Affiliation</title>
+	<meta name="description" content="Researcher homepage: interests, publications, teaching, contact." />
+	<link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<div id="outer">
-<header><div id="header-container"><div id="head-inner"><h1>Masatomo Torikai (鳥飼将雅)</h1>
-<p class="description">I am an Associate Professor at the University of Osaka, Japan. </p></div></div>
-</header>
-<div id="content-wrapper">
-<main>
-<div id="inner">
-<h2>CV</h2>
-<p>
-  My CV is <a href="https://www.dropbox.com/scl/fi/5dc5bzscqbvm046du5y5b/CV-March_2024-_Torikai.pdf?rlkey=scmh161v33r1r9jdz8kexilt5&st=2kdngtsq&dl=0" target="_blank"><b>
-              here</b>
-          </a>.
-</p>
-</div>
-</main>
-<aside>
-<div id="middle-inner">
-<div class="side-title">menu</div>
-<div class="side">
-<ul>
-<li>記事ページへのリンク</li>
-<li>記事ページへのリンク</li>
-</ul>
-</div>
-</div>
-</aside>
-</div>
-<footer>© 2010 あなたのホームページ</footer>
-</div></body>
+	<a class="skip" href="#main">本文へスキップ</a>
+
+	<header class="site-header">
+		<div class="container header-inner">
+			<div class="brand">
+				<a href="#" class="name">Masatomo Torikai</a>
+				<div class="meta">The University of Osaka (Japan) / Associate Professor</div>
+			</div>
+
+			<nav aria-label="Site">
+				<ul class="nav">
+					<li><a href="#about">About</a></li>
+					<li><a href="#research">Research</a></li>
+					<li><a href="#pubs">Publications</a></li>
+					<li><a href="#teaching">Teaching</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main" class="container">
+		<section class="hero">
+			<h1>Masatomo Torikai</h1>
+			<p class="lead">
+				I am studying subnational politics, party politics, and elections in authoritarian regimes.
+			</p>
+			<p class="links">
+				<a href="https://www.dropbox.com/scl/fi/5dc5bzscqbvm046du5y5b/CV-March_2024-_Torikai.pdf?rlkey=scmh161v33r1r9jdz8kexilt5&st=2kdngtsq&dl=0">CV (PDF)</a>
+				<span class="dot">•</span>
+				<a href="https://scholar.google.com/citations?user=5gBqi98AAAAJ&hl=en">Google Scholar</a>
+				<span class="dot">•</span>
+				<a href="https://orcid.org/">ORCID</a>
+			</p>
+		</section>
+
+		<section id="about" class="section">
+			<h2>About</h2>
+			<p>
+				My research focuses on elite behavior in authoritarian regimes, such as electoral mobilization, career choices, and
+				political representation. Although I have mainly worked on political processes in Russia and Ukraine, I am interested in
+				politics in non-democratic countries in general. My book project focuses on the triadic relationship between central,
+				regional, and local governments during centralization, based on the analysis of political processes in post-1991 Russia.
+				
+				I have conducted fieldwork in Ukraine (2015), Russia (2017, 2018, 2019), and Moldova (2024).
+			</p>
+		</section>
+
+		<section id="research" class="section">
+			<h2>Book Project</h2>
+			<ul class="bullets">
+				<li><strong>Topic A:</strong> one sentence description.</li>
+				<li><strong>Topic B:</strong> one sentence description.</li>
+				<li><strong>Methods:</strong> e.g., statistical analysis, fieldwork, archival research.</li>
+			</ul>
+		</section>
+
+		<section id="pubs" class="section">
+			<h2>Publications</h2>
+
+			<h3>Peer-reviewed</h3>
+			<ol class="publist">
+				<li>
+					<span class="pub-authors">Your Name</span>.
+					<span class="pub-year">(2026)</span>.
+					<span class="pub-title">“Article Title.”</span>
+					<span class="pub-venue"><em>Journal Name</em></span>.
+					<a class="pub-link" href="#">DOI/Link</a>
+				</li>
+			</ol>
+
+			<h3>Working papers</h3>
+			<ol class="publist">
+				<li>
+					<span class="pub-title">“Working Paper Title.”</span>
+					<span class="muted">Under review.</span>
+					<a class="pub-link" href="#">PDF</a>
+				</li>
+			</ol>
+		</section>
+
+		<section id="teaching" class="section">
+			<h2>Teaching</h2>
+			<ul class="bullets">
+				<li>Course Title (Year): brief description or keywords.</li>
+				<li>Course Title (Year): brief description or keywords.</li>
+			</ul>
+		</section>
+
+		<section id="contact" class="section">
+			<h2>Contact</h2>
+			<p>
+				Email: <a href="mailto:yourname@univ.ac.jp">yourname@univ.ac.jp</a><br />
+        Office: Building, Room, University
+      </p>
+		</section>
+
+		<footer class="site-footer">
+			<p class="muted">© <span id="y"></span> Masatomo Torikai. Last updated: 2026-02-10.</p>
+		</footer>
+	</main>
+
+	<script>
+		document.getElementById("y").textContent = new Date().getFullYear();
+	</script>
+</body>
+
 </html>
