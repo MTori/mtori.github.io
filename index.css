@@ -75,6 +75,26 @@ a:hover{ color: var(--link-hover); text-decoration: underline; }
   margin-top: 2px;
 }
 
+/* Header: photo + name */
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-photo{
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+}
+
+.brand-text{
+  display: flex;
+  flex-direction: column;
+}
+
 .nav{
   display: flex;
   gap: 14px;
