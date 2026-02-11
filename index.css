@@ -215,8 +215,8 @@ h3{
 
 /* Large profile photo */
 .hero-photo{
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;  /* ← 丸くしたいなら 50% */
   border: 1px solid #e5e7eb;
