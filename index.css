@@ -114,6 +114,38 @@ a:hover{ color: var(--link-hover); text-decoration: underline; }
 .hero{
   padding: 28px 0 10px;
 }
+/* HERO LAYOUT */
+.hero-inner{
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 40px 0 20px;
+}
+
+/* Large profile photo */
+.hero-photo{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;  /* ← 丸くしたいなら 50% */
+  border: 1px solid #e5e7eb;
+}
+
+/* Text block */
+.hero-text h1{
+  margin: 0 0 8px;
+}
+@media (max-width: 700px){
+  .hero-inner{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-photo{
+    width: 140px;
+    height: 140px;
+  }
+}
 h1{
   font-size: clamp(1.6rem, 2.5vw, 2.1rem);
   margin: 0 0 6px;
