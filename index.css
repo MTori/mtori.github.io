@@ -205,3 +205,35 @@ h3{
   margin-left: 6px;
   font-size: 0.95rem;
 }
+/* HERO LAYOUT */
+.hero-inner{
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 40px 0 20px;
+}
+
+/* Large profile photo */
+.hero-photo{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;  /* ← 丸くしたいなら 50% */
+  border: 1px solid #e5e7eb;
+}
+
+/* Text block */
+.hero-text h1{
+  margin: 0 0 8px;
+}
+@media (max-width: 700px){
+  .hero-inner{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-photo{
+    width: 140px;
+    height: 140px;
+  }
+}
