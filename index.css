@@ -83,8 +83,8 @@ a:hover{ color: var(--link-hover); text-decoration: underline; }
 }
 
 .profile-photo{
-  width: 44px;
-  height: 44px;
+  width: 72px;
+  height: 72px;
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid #e5e7eb;
