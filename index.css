@@ -4,8 +4,9 @@
   --text: #111827;     /* near-black */
   --muted: #6b7280;    /* gray */
   --line: #e5e7eb;     /* light gray */
-  --link: #1f4e79;     /* academic blue */
-  --link-hover: #0b5cab;
+
+  --link: #8B1E2D;        /* academic red */
+  --link-hover: #6E1723;  /* darker on hover */
 
   --maxw: 820px;
 }
@@ -75,26 +76,6 @@ a:hover{ color: var(--link-hover); text-decoration: underline; }
   margin-top: 2px;
 }
 
-/* Header: photo + name */
-.brand{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.profile-photo{
-  width: 72px;
-  height: 72px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid #e5e7eb;
-}
-
-.brand-text{
-  display: flex;
-  flex-direction: column;
-}
-
 .nav{
   display: flex;
   gap: 14px;
@@ -113,38 +94,6 @@ a:hover{ color: var(--link-hover); text-decoration: underline; }
 /* ===== Main ===== */
 .hero{
   padding: 28px 0 10px;
-}
-/* HERO LAYOUT */
-.hero-inner{
-  display: flex;
-  align-items: center;
-  gap: 36px;
-  padding: 40px 0 20px;
-}
-
-/* Large profile photo */
-.hero-photo{
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;  /* ← 丸くしたいなら 50% */
-  border: 1px solid #e5e7eb;
-}
-
-/* Text block */
-.hero-text h1{
-  margin: 0 0 8px;
-}
-@media (max-width: 700px){
-  .hero-inner{
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-photo{
-    width: 140px;
-    height: 140px;
-  }
 }
 h1{
   font-size: clamp(1.6rem, 2.5vw, 2.1rem);
@@ -205,3 +154,54 @@ h3{
   .header-inner{ align-items: flex-start; flex-direction: column; }
 }
 
+  /* Accordion button */
+.accordion {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 6px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #c73d3a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Arrow */
+.accordion .arrow {
+  transition: transform 0.25s ease;
+  font-size: 0.9rem;
+}
+
+/* Open state */
+.accordion.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Panel (hidden by default) */
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-left: 0;
+}
+
+.panel p {
+  margin: 8px 0 12px;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Publication item spacing */
+.pubitem { margin: 12px 0; }
+.pubrow { margin-bottom: 6px; }
+
+
+/* Optional: keep DOI link modest */
+.pub-link{
+  margin-left: 6px;
+  font-size: 0.95rem;
+}
