@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Research | Masatomo Torikai</title>
+	<link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<div class="brand">
+				<a href="index.html" class="name">Masatomo Torikai</a>
+			</div>
+			<nav aria-label="Site">
+				<ul class="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="research.html" aria-current="page">Research</a></li>
+					<li><a href="book-project.html">Book Project</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="japanese.html">日本語</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main" class="container">
+		<section class="section">
+			<h1>Contact</h1>
+
+			<div class="contact-grid">
+				<div class="contact-card">
+					<h2>Email</h2>
+					<p>
+						<a >torikaim.law[at]osaka-u.ac.jp</a>
+					</p>
+
+					<h2>Office</h2>
+					<p>
+						<!-- ↓ここを実住所に差し替え -->
+						Graduate School of Law and Politics, Osaka University<br>
+			      1-6 Machikaneyama-cho, Toyonaka, Osaka 560-0043 Japan<br>
+          </p>
+
+				</div>
+
+				<div class="contact-card">
+					<h2>Map</h2>
+
+					<!-- 方法A：住所検索クエリで埋め込み（手軽） -->
+					<div class="map-wrap">
+						<iframe title="Osaka University map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+							src="https://www.google.com/maps?q=Osaka%20University%20Toyonaka%20Campus&output=embed">
+						</iframe>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<footer class="site-footer">
+			<p class="muted">© <span id="y"></span> Masatomo Torikai.</p>
+		</footer>
+	</main>
+
+	<script>
+		document.getElementById("y").textContent = new Date().getFullYear();
+	</script>
+</body>
+
+</html>
