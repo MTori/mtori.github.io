@@ -12,7 +12,6 @@
     <div class="container header-inner">
       <div class="brand">
         <a href="index.html" class="name">Masatomo Torikai</a>
-        <div class="meta">The University of Osaka / Associate Professor</div>
       </div>
       <nav aria-label="Site">
         <ul class="nav">
@@ -27,11 +26,17 @@
     </div>
   </header>
 
-		<h2>Publications</h2>
+	<main id="main" class="container">
+  <section class="hero">
+    <h1>Research</h1>
+    <p class="lead">My research focuses on ...</p>
+  </section>
 
-			<h3>Peer-reviewed</h3>
+  <section class="section">
+    <h2>Publications</h2>
 
-			<ol class="publist">
+    <h3>Peer-reviewed</h3>
+    <ol class="publist">
 				<li class="pubitem">
 					<div class="pubrow">
 						<span class="pub-authors">Torikai, Masatomo</span>.
@@ -82,7 +87,7 @@
 				</li>
 			</ol>
 
-			<h3>Working papers</h3>
+    <h3>Working papers</h3>
 			<ol class="publist">
 				<li>
 					<span class="pub-title">“Working Paper Title.”</span>
@@ -92,10 +97,11 @@
 			</ol>
 		</section>
 
-    <footer class="site-footer">
-      <p class="muted">© <span id="y"></span> Masatomo Torikai.</p>
-    </footer>
-  </main>
+  <footer class="site-footer">
+    <p class="muted">© <span id="y"></span> Masatomo Torikai.</p>
+  </footer>
+</main>
+		
 
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
