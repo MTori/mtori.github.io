@@ -104,5 +104,30 @@
 		
 
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+	<script>
+  // footer year
+  document.getElementById("y").textContent = new Date().getFullYear();
+
+  // accordion
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".accordion").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+
+        const panel = btn.nextElementSibling;
+        if (!panel) return;
+
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
