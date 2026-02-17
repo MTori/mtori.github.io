@@ -330,3 +330,63 @@ h3{
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
+
+/* 赤い小見出し：既に --link を academic red にしている前提で寄せる */
+.bp-kicker{
+  margin: 18px 0 10px;
+  font-weight: 700;
+  color: var(--link);
+  letter-spacing: 0.2px;
+}
+
+/* タイトルは大きく、でもやりすぎない */
+.bp-title{
+  margin: 0 0 22px;
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  line-height: 1.35;
+  letter-spacing: 0.1px;
+}
+
+/* 2カラム：左本文／右画像 */
+.bp-grid{
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 34px;
+  align-items: start;
+}
+
+/* 本文は読みやすく */
+.bp-text p{
+  margin: 0 0 14px;
+  line-height: 1.8;
+}
+
+/* 画像 */
+.bp-figure{
+  margin: 0;
+}
+
+.bp-image{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+/* キャプション：小さめ、落ち着いた色 */
+.bp-caption{
+  margin-top: 10px;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+/* 画面が狭いときは縦積み */
+@media (max-width: 860px){
+  .bp-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
