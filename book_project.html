@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Project | Masatomo Torikai</title>
+  <meta name="description" content="Book project overview, image, and caption." />
+
+  <!-- あなたの共通CSS -->
+  <link rel="stylesheet" href="index.css" />
+  <!-- Book Project用の追加CSS（下の book-project.css） -->
+  <link rel="stylesheet" href="book-project.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="name">Masatomo Torikai</a>
+        <div class="meta">Osaka University / Associate Professor</div>
+      </div>
+
+      <nav aria-label="Site">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#research">Research</a></li>
+          <li><a class="is-active" href="book-project.html">Book Project</a></li>
+          <li><a href="japanese.html">日本語</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="bp">
+      <p class="bp-kicker">Book Project</p>
+
+      <h1 class="bp-title">
+        Governing Regions with Outsiders: Subnational Cadre Rotations and Centralization in Post-Soviet Russia
+      </h1>
+
+      <div class="bp-grid">
+        <!-- Left: text -->
+        <div class="bp-text">
+          <p>
+            Although centralization gives autocrats formal power over entire regions of their countries, weak institutions and
+            the vast size of the territories prevent them from effectively managing local affairs without the support of local elites.
+            This book project sheds light on centralization reforms in Russia and how these reforms have changed the political interactions
+            between federal, regional, and local elites.
+          </p>
+
+          <p>
+            Based on information gathered during eleven months of intensive fieldwork in several Russian regions, it is shown that several
+            Kremlin agents are struggling to involve local elites in centralization reforms. Statistical analyses of a variety of data, such as
+            the career patterns of governors and heads of municipal executives, methods of selecting heads of municipal executives, and election results,
+            support the theories presented in the case studies.
+          </p>
+
+          <p>
+            The main findings suggest that informal interactions among local elites play a crucial role even in centralized autocracies.
+            Although autocracies successfully centralize power through formal institutional reforms, new informal interactions between central and local governments
+            emerge within the framework of the new institutions.
+          </p>
+        </div>
+
+        <!-- Right: image + caption -->
+        <aside class="bp-media" aria-label="Illustration">
+          <figure class="bp-figure">
+            <img
+              src="images/bookproject-photo.jpg"
+              alt="Campaign poster with a modified United Russia logo"
+              class="bp-image"
+              loading="lazy"
+            />
+            <figcaption class="bp-caption">
+              On a campaign poster of an incumbent mayor of the Communist Party of the Russian Federation, someone put a sticker saying
+              “Eдим Poccию (We eat Russia.)” instead of “Eдиная Poccия (United Russia).” The bear in the original United Russia logo was replaced by a mouse.
+              Photo taken in Novosibirsk (summer 2019).
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p class="muted">© <span id="y"></span> Masatomo Torikai.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
